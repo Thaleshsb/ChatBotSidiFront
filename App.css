@@ -11,9 +11,8 @@
 
 }
 .chat{
-  overflow: auto;
-  display: flex;
-  flex-direction: row;
+  overflow-y: auto;
+  display: grid;
   position: absolute;
   top: 12%;
   left: 10%;
@@ -24,6 +23,24 @@
   border: 5px solid #50d591;
   border-radius: 25px;
   box-sizing: border-box;
+}
+.comentarioUser{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  word-wrap: break-word;
+}
+.comentarioBot{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  word-wrap: break-word;
 }
 input{
   position: absolute;
@@ -39,47 +56,34 @@ input{
 }
 .textUser{
   font-size: 20px;
-  display: flex ;
-  align-items: center;
-  justify-content: center;
   background-color: #50d591;
   color: #461d7b;
-  position: absolute;
-  right: 13%;
-  top: 17%;
-  width: 25%  auto;
-  height: 5%;
+  white-space: nowrap;
+  width: auto;
+  height: auto;
   border-radius: 25px;
   padding-left: 1%;
   padding-right: 1%; 
 }
 #imgUser{
-  top: 15%;
-  right: 5%;
-  position: absolute;
-  height: 11%;
-  width: 6%;
-  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
 }
 .textBot{
   font-size: 20px;
   background-color: #50d591;
   color: #461d7b;
-  position: absolute;
-  left: 16%;
-  top: 9%;
-  width: 25%  auto;
-  height: 5%;
+  white-space: nowrap;
+  width: auto;
+  height: auto;
   border-radius: 25px;
   padding-left: 1%;
   padding-right: 1%;  
 }
 #imgBot{
-  top: 5%;
-  left: 2%;
-  position: absolute;
-  height: 20%;
-  width: 12%;
+  height: 100px;
+  width: 100px;
 }
 
 .form{
